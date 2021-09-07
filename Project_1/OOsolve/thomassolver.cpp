@@ -41,21 +41,21 @@ void SpecThomasSolver::init(int N, vec f(vec x), vec u(vec x)) {
 	_b = vec(_N); 
 	_v = vec(_N).fill(0.); 
 	for (int i=0; i<N; i++) {
-		_b(i) = 2-i/(i+1); 
+		_b(i) = 2.-(double) i/((double) i+1.); 
 	}
 }
 
 void SpecThomasSolver::forward_substitution() {
-	for (int i=1; i<_N-1; i++) {
-		_g(i) = _g(i) + _g(i)/_b(i-1); 
+	for (int i=1; i<_N; i++) {
+		_g(i) = _g(i) + _g(i-1)/_b(i-1); 
 	}
 }
 
 
 void SpecThomasSolver::backward_substitution() {
-	_v(_N-2) = _g(_N-2)/_b(_N-2); 
-	for (int i=_N-3; i>=0; i--) {
-		_v(i) = _g(i) + _v(i+1)/_b(i); 
+	_v(_N-1) = _g(_N-1)/_b(_N-1); 
+	for (int i=_N-2; i>=0; i--) {
+		_v(i) = (_g(i) + _v(i+1))/_b(i); 
 	}
 
 }

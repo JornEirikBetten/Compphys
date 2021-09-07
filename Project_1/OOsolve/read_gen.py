@@ -110,6 +110,14 @@ plt.ylabel("Log10(relative error)")
 plt.legend()
 plt.show()
 """
+print(r_err_max1)
+print(r_err_max2)
+print(r_err_max3)
+print(r_err_max4)
+print(r_err_max5)
+print(r_err_max6)
+print(r_err_max7)
+
 #log of relative errors against log n
 plt.plot(np.log10([10, 10**2, 10**3, 10**4, 10**5, 10**6, 10**7]), np.log10([r_err_max1, r_err_max2, r_err_max3, r_err_max4, r_err_max5, r_err_max6, r_err_max7]))
 plt.xlabel("Log10(n)")
