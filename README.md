@@ -4,7 +4,7 @@ This repository will contain projects and other related objects to the course <b
 Computational physics - FYS4150, taken at the University of Oslo. <br>
 <br>
 <br>
-Project_1 specifics for running programs: <br>
+## Project_1 specifics for running programs: <br>
 Enter Project_1 folder <br>
 Problem 2: <br>
 1(compile): c++ -c prob2.cpp <br>
