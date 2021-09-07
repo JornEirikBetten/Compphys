@@ -20,7 +20,7 @@ void TriDiagSolver::initialize(int N, vec f(vec x), vec u(vec x)) {
 	_exact = u(_x); 
 
 }
-
+// Calculating absolute and relative errors
 void TriDiagSolver::calculate_error() {
 	_a_err = _v - _exact; 
 	for (int i = 0; i<_N; i++) {
@@ -34,7 +34,7 @@ void TriDiagSolver::calculate_error() {
 	}
 }
 
-// writing x and v values to csv file
+// writing x, v, absolute and relative errors to csv file
 void TriDiagSolver::write_to_csv(string filename) {
 	ofstream file; 
 	file.open(filename); 

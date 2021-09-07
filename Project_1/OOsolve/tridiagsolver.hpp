@@ -31,7 +31,7 @@ public:
 
 class SpecThomasSolver : public TriDiagSolver {
 private: 
-	vec _a, _b; 
+	vec _b; 
 	void forward_substitution(); 
 	void backward_substitution(); 
 public: 
