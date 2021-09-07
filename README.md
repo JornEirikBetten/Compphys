@@ -15,6 +15,6 @@ Problem 11: <br>
             c++ LUdecomp.o -larmadillo -o LU <br>
             ./LU N <br>
 Rest of problems: <br>
-1 Enter OOsolve folder >br>
+1 Enter OOsolve folder <br>
 2          make <br>
 3          ./tridiagsolver N algorithm ("general" or "special") <br>
