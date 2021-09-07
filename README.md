@@ -5,7 +5,7 @@ Computational physics - FYS4150, taken at the University of Oslo.
 
 
 Project_1 specifics for running programs: 
-1. Enter Project_1 folder
+Enter Project_1 folder
 Problem 2: 
 1(compile): c++ -c prob2.cpp
             c++ prob2.o -o prob2
@@ -15,6 +15,6 @@ Problem 11:
             c++ LUdecomp.o -larmadillo -o LU 
             ./LU N
 Rest of problems: 
-1. Enter OOsolve folder
-2.          make
-3.          ./tridiagsolver N algorithm ("general" or "special") 
+1 Enter OOsolve folder
+2          make
+3          ./tridiagsolver N algorithm ("general" or "special") 
